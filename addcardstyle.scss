@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.container {
+  margin-top: 7rem;
+
+  h1 {
+    color: blue;
+  }
+  .form {
+    margin-left: 22rem;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    box-shadow: 1px 7px 10px 10px rgb(135 135 135 / 20%);
+
+    label {
+      text-transform: capitalize;
+      margin-top: 1.5rem;
+    }
+
+    input {
+      width: 23rem;
+      margin-left: 1rem;
+    }
+
+    .exp_cvv_sec {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .exp_data {
+        padding-left: 9px;
+        inset: 0.8rem 1rem;
+        box-shadow: 1px 7px 10px 10px rgb(135 135 135 / 9%);
+        height: 5rem;
+        text-align: left;
+
+        label {
+          margin-top: 0.5rem;
+        }
+        width: 10rem;
+        input[type="date"] {
+          width: 8rem;
+          inset: 0.5rem -1rem;
+        }
+      }
+      .cvv_sec {
+        text-align: left;
+        padding-left: 6px;
+        inset: 0.7rem -1rem;
+        width: 10rem;
+        box-shadow: 1px 7px 10px 10px rgb(135 135 135 / 20%);
+        height: 5rem;
+
+        label {
+          margin-top: 0.6rem;
+        }
+        input[type="password"] {
+          width: 5rem;
+          inset: 0.4rem -1rem;
+        }
+      }
+    }
+    input[type="submit"] {
+      margin-top: 2rem;
+      margin-left: 0.2rem;
+    }
+  }
+}

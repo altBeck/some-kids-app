@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: absolute;
+}
+
+.coin_base_sec {
+  &_inner {
+    margin-top: 1rem;
+    height: 8rem;
+    inset-block-start: -1rem;
+    height: 7.7rem;
+
+    .main_sec {
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+      background-color: #fff;
+      display: flex;
+      justify-content: space-between;
+      height: 7rem;
+      border-radius: 8px;
+      .decimal {
+        inset-inline-start: 0.9rem;
+        inset-block-start: 1.5rem;
+        font-size: 1.8rem;
+        font-weight: 800;
+        height: 1px;
+        background-color: #fff;
+      }
+      .text_amount {
+        inset-inline-start: -0.5rem;
+        inset-block-start: 0.5rem;
+        text-align: left;
+        height: 1rem;
+        .head_text {
+          font-size: 0.8rem;
+          inset-block: 1rem;
+          font-weight: 600;
+        }
+        .amount {
+          font-size: 1.5rem;
+          font-weight: 600;
+        }
+      }
+
+      .coin_img_sec {
+        inset-block-start: 2rem;
+        inset-inline-start: -2rem;
+        width: 2rem;
+        height: 1px;
+
+        .coinlogo {
+          img {
+            width: 3rem;
+            inset: -1rem;
+          }
+        }
+        .percentage {
+          inset: -0.6rem -1rem;
+          font-weight: 600;
+          color: green;
+          height: 1px;
+        }
+      }
+    }
+    .markets_sec {
+      position: absolute;
+      inset-block-start: 3rem;
+      width: 1px;
+
+      img {
+        width: 6rem;
+        height: 2rem;
+        inset: 1.3rem 1.3rem;
+      }
+    }
+  }
+}

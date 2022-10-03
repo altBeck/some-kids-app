@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.market_data {
+  &_inner {
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 1rem;
+    border: 1px solid #fafafa;
+    background-color: #f0f0f0;
+    height: 3rem;
+    padding-top: 10px;
+    font-weight: 600;
+
+    .coin_icon {
+      img {
+        width: 2rem;
+        inset-block-start: -0.4rem;
+      }
+    }
+    .coin_name {
+      margin-left: -9rem;
+      width: 5rem;
+    }
+    .usd_number {
+      inset-inline-start: -6rem;
+    }
+    .percentage_number {
+      color: green;
+      font-size: 16px;
+    }
+    .plus_logo {
+      margin-left: 3.5rem;
+      img {
+        width: 2rem;
+        inset-block-start: -0.2rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.community_sec {
+  inset-block-start: 20rem;
+
+  @media screen and (max-width: 768px) {
+    inset-block-start: 0rem;
+    margin-top: -35rem;
+  }
+  &_inner {
+    background-color: #fafafa;
+    height: 50vh;
+
+    @media screen and (max-width: 768px) {
+      height: 45vh;
+    }
+
+    .logo_header {
+      p {
+        inset-block-start: 3rem;
+        font-weight: 600;
+        font-size: 56px;
+        line-height: 65px;
+        letter-spacing: 20px;
+        color: #1e2329;
+        text-transform: uppercase;
+
+        @media screen and (max-width: 768px) {
+          font-weight: 500;
+          font-size: 26px;
+          line-height: 45px;
+          letter-spacing: 15px;
+        }
+      }
+    }
+    .logo_section {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 2rem;
+      width: 20rem;
+      inset-block-start: 6rem;
+      inset-inline-start: 30rem;
+
+      @media screen and (max-width: 768px) {
+        inset-inline-start: 2rem;
+      }
+
+      &_inner {
+        .logo1 {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

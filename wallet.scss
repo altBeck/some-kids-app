@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.wallet_section {
+  &_inner {
+    .section_part {
+      .up_section {
+        font-weight: 600;
+
+        color: white;
+        background-color: rgb(94, 177, 255);
+        height: 14rem;
+        &_inner {
+          inset-block-start: 1rem;
+
+          .balance {
+            font-size: 40px;
+          }
+          .username {
+            margin-top: -20px;
+            font-size: 1rem;
+          }
+
+          .send_recieve_sec {
+            margin-left: 33rem;
+            width: 20rem;
+
+            .logos_send_recieve {
+              ul {
+                display: flex;
+                justify-content: space-evenly;
+                width: 30rem;
+                inset-inline-start: -6.5rem;
+
+                li {
+                  span {
+                    inset-block-start: 10px;
+                  }
+                  margin: 10px;
+                  border: 1px solid red;
+                  width: 4rem;
+                  height: 3rem;
+                  border-radius: 50%;
+                }
+              }
+            }
+
+            .text_send_recieve {
+              width: 30rem;
+              ul {
+                display: flex;
+                justify-content: space-evenly;
+                text-align: left;
+                inset-inline-start: -5.5rem;
+                inset-block-start: -1rem;
+
+                .send {
+                  inset-inline-start: -0.7rem;
+                }
+
+                .recieve {
+                  inset-inline-start: 0.5rem;
+                }
+
+                .crypto {
+                  inset-inline-start: 0.3rem;
+                }
+                li {
+                  margin-block: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .section_down_overall {
+        &_inner {
+          background-color: #fafafa;
+          margin-top: 1.5rem;
+          padding-top: 1.5rem;
+          height: 24.5rem;
+          box-shadow: 1px 7px 10px 10px rgb(135 135 135 / 20%);
+
+          .down_section_header {
+            text-align: left;
+            margin-left: 7rem;
+            padding-top: 1rem;
+            width: 80%;
+            border: 0.1px solid #707a8a;
+            margin-bottom: 0.36px;
+            ul {
+              display: flex;
+              .name {
+                width: 29.8rem;
+              }
+              .last_price {
+                width: 11.8rem;
+              }
+              .change {
+                width: 13rem;
+              }
+            }
+          }
+
+          .down_section {
+            &_inner {
+              .table_section {
+                display: flex;
+                border: 0.1px solid #707a8a;
+                width: 80%;
+                margin-top: 0.8px;
+                border-top: none;
+                margin-left: 7rem;
+                text-align: left;
+
+                .name_section {
+                  width: 30rem;
+
+                  ul {
+                    li {
+                      display: flex;
+
+                      .nav_logo {
+                        margin-right: 1rem;
+                      }
+                    }
+                  }
+                }
+                .price_section {
+                  width: 12rem;
+                  inset-inline-start: 0.5rem;
+                }
+                .change_section {
+                  width: 13rem;
+                  inset-inline-start: 0.8rem;
+                }
+                .markets_section {
+                  width: 13rem;
+                  inset-inline-start: 0.8rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

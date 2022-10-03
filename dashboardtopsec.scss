@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  list-style: none;
+}
+
+.dash_top_sec {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 100%;
+  margin-left: 32rem;
+  text-align: left;
+  margin-top: 3rem;
+
+  &_inner {
+    border: 1px solid #f0f0f0;
+    background-color: #fafafa;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    height: 4.2rem;
+    width: 12.8rem;
+    .top_text {
+      ul {
+        .top_sec {
+          inset-inline-start: -1.5rem;
+          inset-block-start: 0.7rem;
+          font-size: 12px;
+          font-weight: 600;
+        }
+
+        .buttons_sec {
+          li {
+            inset-inline-start: -1rem;
+            margin-top: 0.4rem;
+            font-size: 14px;
+            text-transform: uppercase;
+            text-decoration: none;
+            background-color: #000;
+            border-radius: 100vmax;
+        
+            font-weight: 600;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+
+            .button{
+              text-decoration: none;
+              color: #fff;
+
+              &:hover{
+                color: red;
+              }
+            }
+          }
+        }
+      }
+    }
+    .bottom_sec {
+      ul {
+        display: flex;
+
+        .bottom_number {
+          inset-inline-start: -1.5rem;
+          inset-block-start: -0.1rem;
+          font-size: 27px;
+          font-weight: 700;
+        }
+        .coin_bottom {
+          display: flex;
+          inset-inline-start: -1rem;
+
+          .logo_text {
+            font-size: 12px;
+            inset-block-start: 0.1rem;
+            inset-inline-start: 0.4rem;
+            color: blue;
+            font-weight: 600;
+          }
+        }
+        .right {
+          margin-right: 3px;
+        }
+        .color_number {
+          font-size: 12px;
+          inset-inline-start: -2.2rem;
+          inset-block-start: 0.2rem;
+          color: green;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

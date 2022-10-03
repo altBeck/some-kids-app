@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.bg {
+  background-color: #00a572;
+  height: 100vh;
+  padding-top: 1px;
+}
+
+.support {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background-color: #00a572;
+  color: whitesmoke;
+  border-radius: 8px;
+  width: 40%;
+  height: 30.5rem;
+  margin: 4vh auto;
+  padding: 45px;
+  -webkit-box-shadow: 5px 0 20px rgba(245, 245, 220, 0.568);
+  box-shadow: 5px 0 20px rgba(245, 245, 220, 0.568);
+}
+
+.support--left {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.support--left h1 {
+  font-size: 4rem;
+  line-height: 0.5;
+  margin-bottom: 20px;
+}
+
+.support--left p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+
+.support--left button {
+  all: unset;
+  border: 2px solid whitesmoke;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  cursor: pointer;
+  font-weight: 100;
+  -webkit-transition: -webkit-transform all 300ms ease-out;
+  transition: -webkit-transform all 300ms ease-out;
+  transition: transform all 300ms ease-out;
+  transition: transform all 300ms ease-out, -webkit-transform all 300ms ease-out;
+}
+
+.support--left a {
+  color: white;
+}
+
+.support--left a:hover {
+  padding: 20px 25px;
+  cursor: pointer;
+}
+
+.support--right {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .bg {
+    height: 57.1vh;
+  }
+
+  .support {
+    width: 50%;
+    height: 69%;
+  }
+
+  .support--left h1 {
+    font-size: 2.3rem;
+    margin-block: 0 1rem;
+  }
+
+  .support--left p {
+    font-size: 0.7rem;
+    margin-bottom: 0rem;
+    font-weight: 500;
+    width: 10rem;
+    margin-left: 1.5rem;
+    letter-spacing: 1px;
+  }
+
+  .support--left button {
+    padding: 5px 10px;
+    font-size: 1rem;
+    margin-bottom: 0rem;
+  }
+
+  .support--right {
+    position: relative;
+    padding: 0px;
+    inset: 3.5rem -2rem;
+  }
+
+  img {
+    width: 14rem;
+  }
+}

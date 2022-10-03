@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.get_started {
+  inset-block-start: 15rem;
+  height: 250px;
+  background-color: #fafafa;
+
+  @media screen and (max-width: 768px) {
+    margin: 60rem 0;
+  }
+  &_contents {
+    text-align: center;
+    inset-block-start: 2.5rem;
+    height: inherit;
+
+    p {
+      font-size: 40px;
+      line-height: 48px;
+      font-weight: 600;
+
+      @media screen and (max-width: 768px) {
+        font-size: 30px;
+        line-height: 24px;
+        font-weight: 500;
+      }
+    }
+
+    .sign_up_btn {
+      inset-block-start: 2rem;
+      width: 12rem;
+      height: 3rem;
+      background-color: #fcd535;
+      border-radius: 10px;
+      border: none;
+
+      @media screen and (max-width: 768px) {
+        width: 10rem;
+        height: 2rem;
+      }
+    }
+  }
+}
